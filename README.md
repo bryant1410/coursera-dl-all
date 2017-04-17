@@ -1,11 +1,11 @@
 # coursera-dl-all
 
-#NOTE: THIS PROJECT IS OBSOLETE AFTER 6/30/2016. Coursera has fully committed to their new format, and this application was designed for their old class format. 
+# NOTE: THIS PROJECT IS OBSOLETE AFTER 6/30/2016. Coursera has fully committed to their new format, and this application was designed for their old class format. 
 Extend the Coursera Downloader by downloading quizzes and assignments (and hopefully forum posts soon!). Uses coursera-dl in the process.  
 
 ![An example of download](http://www.imgur.com/HTd028B.png)
 
-##Features
+## Features
 Cross-Platform (theoretically!) Python 2 & 3  
 Download quizzes  
 Download important files on assignment pages  
@@ -16,7 +16,7 @@ Ability to automatically sign up for a class / bypass the honor code stuff (so y
 A list of all classes on the old platform for Coursera  
 
 
-##Step by Step Instructions (Thanks to Light1980 for the initial write up)
+## Step by Step Instructions (Thanks to Light1980 for the initial write up)
 1. Make sure you have Firefox installed (below version 47)
 2. Make sure you have python installed (2 or 3, although 3 is preferred)
 3. Install coursera_dl with pip if you want to download videos. `pip install coursera_dl`
@@ -30,13 +30,13 @@ For example:
 
 `python dl_all.py -u your_coursera_account -p your_password  -v(download video) -a(download assignment) -q(download quiz) --path the_location_of_download`
 
-##Todo:
+## Todo:
 Add support for forums  
 Add support for human graded assignments  
 Fix bugs for any courses  
 Suggestions?
 
-##Installation
+## Installation
 -Coursera-Dl. This must be installed if you want to download videos. If you only need to download non video stuff, just don't use the -v tag.  
 pip install coursera-dl
 
@@ -46,7 +46,7 @@ pip install selenium
 -PhantomJS. (optional) If you want to run the program with the browser invisible, install this
 
 ##
-##To run:
+## To run:
 
 First populate the classes.csv with slugs or URLs of desired classes. Slugs would be things like pgm-003 while the URL would be https://class.coursera.org/pgm-003
 
@@ -73,7 +73,7 @@ python dl_all.py -u horacehe2007@yahoo.com -p hunter2 -q -v
 note: you must be signed up for the courses.
 Note: A list of all classes is provided (not in the right format though)
 
-##Output
+## Output
 The output is sorted into categories. Assignments is always there, and the other categories are pulled from the site itself.
 
 Each category (e.g. Quizzes, Assignments, Homework) is split into subfolders for each quiz/assignment. Each of these folders hold a screenshot of the page, all zip files on the page, a links.txt holding all links on the page (in case there's files that you need to download that aren't a zip file).
